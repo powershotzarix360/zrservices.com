@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about page</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV or Remuse Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	* {
+
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  
+}
+
+
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 2em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+p a {
+
+text-decoration: none;
+color: black;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: montserrat;
+  padding-top: 0%;
+}
+nav{
+  background:  #5029bc;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  
+}
+.problem nav ul{
+  float: right;
+  margin-right: 20px;
+  
+}
+.problem nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  
+}
+.problem nav ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color:0082e6;
+}
+a.active,a:hover{
+  background: #e0e2e4;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  
+}
+#check{
+  display:none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 20px;
+    line-height: 90px;
+  }
+  .checkbtn{
+ line-height: 90px;
+
+
+  }
+  .checkbtn a{
+ line-height: 90px;
+  color: white;
+
+  }
+  p{
+
+    padding-right: 20px;
+  }
+  .problem nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  .problem ul{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background:#5029bc;
+    
+    top:80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  
+    
+    
+  }
+  .problem nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .problem nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none ;
+    color: #8376a7;
+  }
+  
+
+ 
+
+
+
+
+
+
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  
+}
+h2{
+  text-align: center;
+  padding-top: 40px;
+  color: blue;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #5d65d4;
+    margin:50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    box-shadow: 50px rgba(211, 68, 68, 0.1);
+}
+.container .left_Side
+{
+    position: relative;
+    background: #484180;
+    padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(179, 46, 46, 0.2);
+}
+.profileText .imgBx
+{
+    position:relative;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    overflow:hidden;
+
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-style: 300;
+}
+.contactInfo
+{
+    padding-top: 40px ;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+
+.contactInfo ul
+{
+position: relative;
+}
+.contactInfo ul li
+{
+position: relative;
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.education li
+{
+margin-bottom: 15px;
+
+}
+.contactInfo.education h5
+{
+    color: rgb(253, 253, 253);
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: rgb(252, 248, 248);
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+color: #fff;
+font-weight: 300;
+}
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #ffffff;
+    display: block;
+    margin-top: 5px;
+    
+}
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #620305;
+}
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about 
+{
+    margin-bottom: 50px;
+
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+}
+.about .box
+{
+    display:flex ;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: rgb(17, 8, 148);
+    font-size: 16px;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+align-items: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+background: #c1baba;
+}
+.skills .box .percent div 
+{
+position: absolute;
+top: 0;
+left: 00;
+height: 100%;
+background: rgb(22, 8, 148);
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li 
+{
+    list-style: none;
+    color: #311717;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa 
+{
+    color: #0b1780;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width:1000px)
+{
+
+.container{
+ margin: 10px;
+ grid-template-columns: repeat(1,1fr);
+ margin-left: 0px;
+
+
+
+}
+.interest ul {
+
+grid-template-columns: repeat(2,1fr);
+
+
+}
+
+}
+
+@media(max-width:600px)
+{
+
+.about.box{
+ flex-direction: column     ;
+
+}
+.box .about .year_company{
+
+    margin-bottom: 5px;
+}
+.interest ul {
+
+
+    grid-template-columns: repeat(1,1fr);
+}
+.contactInfo.language .percent{
+
+ margin-left: 20px;
+
+}
+}
+
+
+
+
+
+	</style>
+  </head>
+  <body>
+    <header>
+      <div class="problem">
+      <nav>
+        <input type="checkbox" id="check">
+        
+        <label for="check" class="checkbtn">
+          <a href="zrhome.html"> <i class="fa-solid fa-house"></i></a>
+        </label>
+        <label class="logo">ZAR.COM</label>
+        <ul>
+          <li><a  href="zrsrvice.html">BACK</a></li>
+      
+          
+        </ul>
+      </nav>
+      </nav>
+      </div>
+      </header>
+      <div class="container">
+        <div class="left_Side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="zarpicture.png">
+                </div>
+                <h2>Abu Zar<br><span>Developer/Designer</span></h2>
+            </div>
+            <div class="contactInfo">
+            <h3 class="title">Contact Info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">03162337561</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <span class="text">zarbusiness2023@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="text">zar.com.netlify.app</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                    <span class="text">www.linkedin.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span class="text">karachi pakistan</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo education">
+            <h3 class="title">EDUCATION</h3>
+            <ul>
+                <li>
+                   <h5>2021-2023</h5>
+                   <h4> Matric in Computer Science</h4>
+                   <h4>Saadi Goverment boys secondary school</h4>
+                </li>
+                <li>
+                    <h5></h5>
+                    <h4> </h4>
+                    <h4></h4>
+                 </li>
+                 <li>
+                    <h5></h5>
+                    <h4></h4>
+                    <h4></h4>
+                 </li>
+            </ul>
+        </div>
+        <div class="contactInfo language">
+            <h3 class="title">LANGUAGES</h3>
+            <ul>
+                <li>
+                    <span class="text">English</span>
+                    <span class="percent"></span>
+                    <div style="width: 70%;"></div>
+                </li>
+                <li>
+                    <span class="text">Urdu</span>
+                    <span class="percent"></span>
+                    <div style="width: 80%;"></div>
+                </li>
+            </ul>
+    </div>
+    </div>
+  <div class="right_Side">
+  <div class="about">
+    <h2 class="title2">Profile</h2>
+<p>Are you looking for a versatile creative professional who can transform your digital dreams into stunning realities? Look no further!<br/>
+   Meet ZAR, a dynamic web developer, graphic designer,<br/> and passionate photography enthusiast, all rolled into one!</p>
+  </div>
+  <div class="about">
+    <h2 class="title2">Experience</h2>
+    <div class="box">
+        <div class="year_company">
+<h5>Work<br/> Experience</h5>
+<h5></h5>
+        </div>
+        <div class="text">
+        <h4>NONE</h4>
+        <p> </p>
+    </div>
+</div>
+  <div class="box">
+    <div class="year_company">
+<h5></h5>
+<h5></h5>
+    </div>
+    <div class="text">
+    <h4></h4>
+    <p></p>
+</div>
+</div>
+</div>
+<div class="about skills">
+    <h2 class="title2">Professional Skills</h2>
+<div class="box">
+    <h4>HTML/CSS</h4>
+    <div class="percent">
+    <div style="width:95%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>JAVASCRIPT</h4>
+    <div class="percent">
+    <div style="width: 10%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>GRAPHIC DESIGNING</h4>
+    <div class="percent">
+    <div style="width: 50%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>PHOTOGRAHY<br/>EDITING</h4>
+    <div class="percent">
+    <div style="width:98%;"></div>
+</div>
+</div>
+</div>
+<div class="About interest">
+    <h2 class="title2">Interest</h2>
+    <ul>
+        <li><i class="fa-solid fa-futbol" aria-hidden="true"></i>FOOTBALL</li>
+        <li><i class="fa-solid fa-code" aria-hidden="true"></i>DEVELOPING</li>
+        <li><i class="fa-solid fa-camera-retro" aria-hidden="true"></i>PHOTOGRAHY</li>
+        <li><i class="fa-solid fa-video" aria-hidden="true"></i>DIRECTION &<br/>PRODUCTION</li>
+    </ul>
+</div>
+  </div>
+    </div>
+      
+      
+
+
+
+  </body>
+</html>
