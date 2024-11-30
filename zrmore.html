@@ -208,6 +208,55 @@ section{
   
 }
 
+.gallery-title {
+    margin: 20px 0;
+    color: #210dd1;
+    font-size: 2.5rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.gallery-item {
+    width: calc(25% - 20px); /* Adjust for responsiveness */
+    aspect-ratio: 3 / 4; /* Maintain a consistent aspect ratio for all images */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%; /* Set image height to fill container */
+    object-fit: cover; /* Crop image to fill container */
+    object-position: center; /* Center the cropped image */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 20px);
+    }
+}
 	</style>
   </head>
   <body>
@@ -228,15 +277,137 @@ section{
       </nav>
       <section></section>
       </header>
-        
-
-      <h1> This website is still in progress</h1>
-      <h3>More Services related to graphic design , Photo editing & Web development
-        <br/> will be added soon.... </h3>
-        <h1>NOTE!</h1>
-        <h3>All those images  which are added in our services section are just for example<br/>
-        we can make any type of design that you want. Directly contact us through our contact section.  </h3>
-        <h4>project september 2023 
-        <br/>copyright@ by Abu Zar</h4>
-        </body>
+  <h1 class="gallery-title">My Photography Gallery</h1>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src=art/1.jpg alt="Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="art/2.jpg" alt="Photo 2">
+        </div>
+        <div class="gallery-item">
+            <img src="art/3.jpg" alt="Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="art/4.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/5.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/6.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/7.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/8.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/9.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/10.jpg" alt="Photo 4">
+        </div>
+               <div class="gallery-item">
+            <img src=art/11.jpg alt="Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="art/12.jpg" alt="Photo 2">
+        </div>
+        <div class="gallery-item">
+            <img src="art/13.jpg" alt="Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="art/14.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/15.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/16.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/17.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/18.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/19.jpg" alt="Photo 4">
+        </div>
+        <div class="gallery-item">
+            <img src="art/20.jpg" alt="Photo 4">
+        </div>
+ 
+    <div class="gallery-item">
+        <img src=art/21.jpg alt="Photo 1">
+    </div>
+    <div class="gallery-item">
+        <img src="art/22.jpg" alt="Photo 2">
+    </div>
+    <div class="gallery-item">
+        <img src="art/23.jpg" alt="Photo 3">
+    </div>
+    <div class="gallery-item">
+        <img src="art/24.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/25.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/26.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/27.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/28.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/29.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/30.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src=art/31.jpg alt="Photo 1">
+    </div>
+    <div class="gallery-item">
+        <img src="art/32.jpg" alt="Photo 2">
+    </div>
+    <div class="gallery-item">
+        <img src="art/33.jpg" alt="Photo 3">
+    </div>
+    <div class="gallery-item">
+        <img src="art/34.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/35.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/36.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/37.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/38.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/39.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/40.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/41.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/42.jpg" alt="Photo 4">
+    </div>
+    <div class="gallery-item">
+        <img src="art/43.jpg" alt="Photo 4">
+    </div>
+</div>
 </html>
