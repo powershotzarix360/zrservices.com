@@ -74,7 +74,7 @@ body{
   padding-top: 0%;
 }
 nav{
-  background:  #5029bc;
+  background:#1202ff;
   height: 80px;
   width: 100%;
   position: sticky;
@@ -107,9 +107,9 @@ nav ul li a{
   background-color:0082e6;
 }
 a.active,a:hover{
-  background: #e0e2e4;
+  background: #000c66;
   transition: .5s;
-}
+   border-radius: 15px;}
 .checkbtn{
   font-size: 30px;
   color: rgb(245, 243, 243);
@@ -147,7 +147,7 @@ a.active,a:hover{
     position:fixed;
     width: 100%;
     height: 100%;
-    background: #5029bc;
+    background: #1202ff;
     top:80px;
     left: -100%;
     text-align: center;
@@ -165,8 +165,9 @@ a.active,a:hover{
     font-size: 20px;
   }
   a:hover,a.active{
-    background: none ;
-    color: #1690ee;
+    background: #000c66;
+  transition: .5s;
+   border-radius: 15px;
   }
   #check:checked ~ ul{
     left: 0;
@@ -191,9 +192,10 @@ section{
   width: 85%;
   background: #fff;
   border-radius: 6px;
-  padding: 20px 60px 30px 40px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 50px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(9, 1, 94, 0.899);
   margin-left: 100px;
+  margin-top: 50PX;
 }
 .container .content{
   display: flex;
@@ -231,9 +233,14 @@ section{
   
   
 }
+
+.content .left-side .details a:hover,a.active{
+  background: white;
+}
+
 .content .left-side .details i{
-  font-size: 30px;
-  color: #3e2093;
+  font-size: 20px;
+  color: #000c66;
   margin-bottom: 10px;
   padding: 2px;
   
@@ -252,7 +259,7 @@ section{
 .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
-  color: #1515e9;
+  color: #1202ff;
   
   
 }
@@ -263,7 +270,7 @@ section{
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #351acf;
+  color:#1202ff;
 }
 .right-side .input-box{
   height: 50px;
@@ -302,12 +309,12 @@ section{
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: #000c66;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="submit"]:hover{
-  background: #5029bc;
+  background: #1202ff;
   
 }
 
@@ -315,6 +322,7 @@ section{
   .container{
     width: 90%;
     padding: 30px 40px 40px 35px ;
+    margin-left: 50px;
   }
   .container .content .right-side{
    width: 75%;
@@ -371,7 +379,7 @@ section{
         <div class="content">
           <div class="left-side">
             <div class="address details">
-              <a href="https://www.instagram.com/_zareditz?r=nametag"><i class="fa-brands fa-instagram">
+              <a href="https://www.instagram.com/_zarrxx?r=nametag"><i class="fa-brands fa-instagram">
                 </i></a>
               <div class="topic">
               </a>Insta</div>
@@ -380,7 +388,7 @@ section{
             <div class="phone details">
               <i class="fa-brands fa-whatsapp"></i>
               <div class="topic">Whatsapp</div>
-              <div class="text-one"></div>
+              <div class="text-one">03162337561</div>
               <div class="text-two"></div>
             </div>
             <div class="email details">
@@ -422,10 +430,11 @@ section{
         </div>
         </div>
       </div>
-      
-
-
-
-
 </body>
 </html>
+
+
+
+
+
+
