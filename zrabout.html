@@ -74,7 +74,7 @@ body{
   padding-top: 0%;
 }
 nav{
-  background:  #5029bc;
+  background: #0000ff;
   height: 80px;
   width: 100%;
   position: sticky;
@@ -107,8 +107,9 @@ label.logo{
   background-color:0082e6;
 }
 a.active,a:hover{
-  background: #e0e2e4;
+  background: #000c66;
   transition: .5s;
+  border-radius: 15px;
 }
 .checkbtn{
   font-size: 30px;
@@ -156,7 +157,7 @@ a.active,a:hover{
     position:fixed;
     width: 100%;
     height: 100%;
-    background:#5029bc;
+    background:#0000ff;
     
     top:80px;
     left: -100%;
@@ -175,8 +176,9 @@ a.active,a:hover{
     font-size: 20px;
   }
   a:hover,a.active{
-    background: none ;
-    color: #8376a7;
+    background: #000c66;
+  transition: .5s;
+   border-radius: 15px;
   }
   
 
@@ -197,7 +199,7 @@ section{
 h2{
   text-align: center;
   padding-top: 40px;
-  color: blue;
+  color: #0000ff;
 
 
 }
@@ -210,7 +212,7 @@ h2{
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    background: #5d65d4;
+    background:#0000ff;
     margin:50px;
     display: grid;
     grid-template-columns: 1fr 2fr ;
@@ -219,7 +221,7 @@ h2{
 .container .left_Side
 {
     position: relative;
-    background: #484180;
+    background: #000c66;
     padding: 40px;
 }
 .profileText
@@ -337,12 +339,12 @@ font-weight: 300;
     top: 0;
     left: 0;
     height: 100%;
-    background: #620305;
+    background: #0d0808;
 }
 .container .right_Side
 {
     position: relative;
-    background: #fff;
+    background: hsl(0, 0%, 100%);
     padding: 40px;
 }
 .about 
@@ -363,7 +365,7 @@ font-weight: 300;
 }
 p
 {
-    color: #333;
+    color: #000000;
 }
 .about .box
 {
@@ -438,7 +440,7 @@ background: rgb(22, 8, 148);
 {
 
 .container{
- margin: 10px;
+ margin-top: 0px;
  grid-template-columns: repeat(1,1fr);
  margin-left: 0px;
 
@@ -451,11 +453,20 @@ grid-template-columns: repeat(2,1fr);
 
 
 }
+}
+
+@media(max-width:850px)
+{
+  .container{ margin-top:0px;}
 
 }
 
 @media(max-width:600px)
 {
+  .container{
+
+    margin-top:0px;
+  }
 
 .about.box{
  flex-direction: column     ;
@@ -509,7 +520,7 @@ grid-template-columns: repeat(2,1fr);
                 <div class="imgBx">
                     <img src="zarpicture.png">
                 </div>
-                <h2>Abu Zar<br><span>Developer/Designer/seo</span></h2>
+                <h2>Abu Zar<br><span>Dev/Art/seo</span></h2>
             </div>
             <div class="contactInfo">
             <h3 class="title">Contact Info</h3>
@@ -545,9 +556,9 @@ grid-template-columns: repeat(2,1fr);
                    <h4>Saadi Goverment boys secondary school</h4>
                 </li>
                 <li>
-                    <h5></h5>
-                    <h4> </h4>
-                    <h4></h4>
+                    <h5>2023-2025</h5>
+                    <h4>On Going Intermidiate in Computer Science </h4>
+                    <h4>Liaquat Goverment College</h4>
                  </li>
                  <li>
                     <h5></h5>
@@ -577,72 +588,50 @@ grid-template-columns: repeat(2,1fr);
     <h2 class="title2">Profile</h2>
 <p>Are you looking for a versatile creative professional who can transform your digital dreams into stunning realities? Look no further!<br/>
    Meet ZAR, a dynamic front-end web-developer, graphic designer, Video Editor<br/> and  seo enthusiast, all rolled into one!</p>
-  </div>
-  <div class="about">
-    <h2 class="title2"></h2>
-    <div class="box">
-      <div class="year_company">
-<h5><br/> </h5>
-<h5></h5>
-        </div>
-        <div class="text">
-        <h4></h4>
-        <p> </p>
-    </div>
 </div>
-  <div class="box">
-    <div class="year_company">
-<h5></h5>
-<h5></h5>
-    </div>
-    <div class="text">
-    <h4></h4>
-    <p></p>
-</div>
-</div>
-</div>
+  
 <div class="about skills">
     <h2 class="title2">Professional Skills</h2>
 <div class="box">
     <h4>HTML/CSS</h4>
     <div class="percent">
-    <div style="width:95%;"></div>
+    <div style="width:100%;"></div>
 </div>
 </div>
 <div class="box">
-    <h4>PHYTHON</h4>
+    <h4>PHOTOGRAHY EDITING</h4>
     <div class="percent">
-    <div style="width: 10%;"></div>
+    <div style="width: 95%;"></div>
 </div>
 </div>
 	<div class="box">
-    <h4>JAVASCRIPT</h4>
-    <div class="percent">
-    <div style="width: 24%;"></div>
-</div>
-</div>
-<div class="box">
     <h4>GRAPHIC DESIGNING</h4>
     <div class="percent">
-    <div style="width: 70%;"></div>
+    <div style="width: 80%;"></div>
+</div>
+</div>
+<div class="box">
+    <h4>SEARCH ENGINE OPTIMIZATION</h4>
+    <div class="percent">
+    <div style="width: 75%;"></div>
 </div>
 </div>
 	<div class="box">
-    <h4>SEARCH ENGINE OPTIMIZATION</h4>
+    <h4>VIDEO EDITING</h4>
     <div class="percent">
     <div style="width: 60%;"></div>
 </div>
 </div>
 <div class="box">
-    <h4>PHOTOGRAHY<br/>EDITING</h4>
+    <h4>JAVASCRIPT</h4>
     <div class="percent">
-    <div style="width:98%;"></div>
+    <div style="width:30%;"></div>
 </div>
 </div>
 		  <div class="box">
-    <h4>Video Editing</h4>
+    <h4>PYTHON</h4>
     <div class="percent">
-    <div style="width: 70%;"></div>
+    <div style="width:25%;"></div>
 </div>
 </div>
 </div>
@@ -650,10 +639,10 @@ grid-template-columns: repeat(2,1fr);
 <div class="About interest">
     <h2 class="title2">Interest</h2>
     <ul>
-        <li><i class="fa-solid fa-futbol" aria-hidden="true"></i>FOOTBALL</li>
+        <li><i class="fa-solid fa-futbol" aria-hidden="true"> </i>FOOTBALL</li>
         <li><i class="fa-solid fa-code" aria-hidden="true"></i>DEVELOPING</li>
         <li><i class="fa-solid fa-camera-retro" aria-hidden="true"></i>PHOTOGRAHY</li>
-        <li><i class="fa-solid fa-video" aria-hidden="true"></i>DIRECTION &<br/>PRODUCTION</li>
+        <li><i class="fa-solid fa-video" aria-hidden="true"></i>DIRECTION<br/>PRODUCTION</li>
     </ul>
 </div>
   </div>
@@ -665,3 +654,6 @@ grid-template-columns: repeat(2,1fr);
 
   </body>
 </html>
+
+
+
